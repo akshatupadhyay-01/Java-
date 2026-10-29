@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class ConditionalStatements {
     public static void main(String[]args){
         int marks;
@@ -19,46 +20,46 @@ public class ConditionalStatements {
         //Invalid condition 
         if (marks<0 || 100<marks || attendancePercentage<0 || 100<attendancePercentage ){
              System.out.println("Invalid input");
+             return;
              
         }
 
         //Grade 
         
-        if(marks>=90)
-        System.out.println("Grade A");
-        else if(75<=marks && marks<=89)
-        System.out.println("Grade B");
-        else if(60<=marks && marks<=74)
-        System.out.println("Grade C");
-        else if(40<=marks && marks<=59)
-        System.out.println("Grade D");
-        else if(marks<40)
-        System.out.println("Fail");
+        if (marks >= 90)
+            System.out.println("Grade A");
+        else if (marks >= 75)
+            System.out.println("Grade B");
+        else if (marks >= 60)
+            System.out.println("Grade C");
+        else if (marks >= 40)
+            System.out.println("Grade D");
+        else
+            System.out.println("Fail");
         
-        
-           
-
     //Pass eligibility check
-
-
+    
     if(40<=marks && 75<=attendancePercentage)
         System.out.println("Eligible");
     
     else
         System.out.println("Not eligible");
      
-    if(!assignment)
-      System.out.println("Submit assignment as soon as possible.");
+    // Assignment reminder
+    if (!assignment) {
+        System.out.println("Submit assignment as soon as possible.");
+    }
 
-    if(90<=marks && 95<=attendancePercentage)
-        System.out.println("You are eligible \n"+"Special Reward!! ");
-    
-    else
-        System.out.println("Not eligible");
+    // Special eligibility check
+    if (marks >= 90 && attendancePercentage >= 95) {
+        System.out.println("Eligible for special reward");
 
-    if(!assignment)
-      System.out.println("Submit assignment as soon as possible.");
-
-
+        if (assignment) {
+        System.out.println("Special Reward!!");
+        }
+    }   
+    else {
+        System.out.println("Not eligible for special reward");
+        }
     }
 }

@@ -39,13 +39,14 @@ public static void main(String[] args){
 
     //Floating-point types : float and Double
 
-    //float. : 4 bytes - few decimal value 
+    //float. : 4 bytes; approximately 6-7 significant digits
     // we are using f at the last of value because in java a decimal value ia always consider as a double .
+    //in simple words for float literal we use suffix f.
     float b=30.333f;
 
     System.out.println("Float value : "+b);
 
-    //Double : 8 bytes
+    //double : 8 bytes; approximately 15-16 significant digits
     double c=20_00_000.2222222222222222222;
     double d=12e10;
 
@@ -55,9 +56,9 @@ public static void main(String[] args){
     //char : 2 bytes
     char e='a';
     e++;
-    System.out.println("Char type : " +e);
+    System.out.println("Char type : " +e); //b
 
-    //Boolean 
+    //Boolean : Store true and false 
     boolean f=true;
     System.out.println("Boolean type : " +f);
 
