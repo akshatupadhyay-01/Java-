@@ -61,9 +61,6 @@ public static void main(String[] args){
     //Boolean : Store true and false 
     boolean f=true;
     System.out.println("Boolean type : " +f);
-
     
-    
-    
-}
+    }
 }
